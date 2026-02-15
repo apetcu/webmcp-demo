@@ -1,4 +1,4 @@
-export { initPolyfill, createModelContextClient } from "./polyfill";
+export { initPolyfill, createModelContextClient } from "@adipetcu/webmcp-polyfill";
 export type {
   ModelContext,
   ModelContextTool,
@@ -10,4 +10,4 @@ export type {
   ToolResponseContent,
   UserInteractionCallback,
   WebMCPDebug,
-} from "./types";
+} from "@adipetcu/webmcp-polyfill";

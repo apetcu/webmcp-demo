@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@adipetcu/webmcp-polyfill": "^0.1.0",
     "@prisma/client": "^5.22.0",
     "autoprefixer": "^10.4.24",
     "clsx": "^2.1.1",

@@ -2,8 +2,8 @@
 
 import { useEffect, useRef } from "react";
 import { useCart } from "@/lib/cart-context";
-import { initPolyfill } from "./polyfill";
-import type { ModelContext, ToolResponse } from "./types";
+import { initPolyfill } from "@adipetcu/webmcp-polyfill";
+import type { ModelContext, ToolResponse } from "@adipetcu/webmcp-polyfill";
 
 function ok(data: unknown): ToolResponse {
   return { content: [{ type: "text", text: JSON.stringify(data) }] };
