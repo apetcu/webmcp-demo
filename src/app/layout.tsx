@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Suspense } from "react";
 import "./globals.css";
 import { CartProvider } from "@/lib/cart-context";
+import { WebMCPProvider } from "@/lib/webmcp/tools";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
 
@@ -35,6 +36,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-[family-name:var(--font-geist-sans)]`}
       >
         <CartProvider>
+          <WebMCPProvider />
           <Suspense>
             <Navbar />
           </Suspense>
